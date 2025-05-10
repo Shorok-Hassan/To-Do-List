@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+    transition: transform 1s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #4a90e2;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeInText 3s ease-in-out;
+    transition: transform 1s ease-in-out;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    width: 80%;
+    margin: 15px 0;
+    border: 1px solid #c2e9fb;
+    border-radius: 8px;
+    background-color: #f4f9fd;
+    color: #4a90e2;
+    font-size: 1.1em;
+    transition: all 1s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px #4a90e2;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 1s ease, transform 1s ease;
+    font-size: 1.1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d72b8;
+    transform: translateY(-5px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 3s ease-in-out;
+    transition: all 1s ease;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #c2e9fb;
+    text-align: center;
+    color: #4a90e2;
+    font-size: 1.1em;
+    transition: all 1s ease;
+}
+
+tr:hover {
+    background-color: #e6f4fc;
+}
+
+h3 {
+    color: #4a90e2;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
